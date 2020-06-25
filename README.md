@@ -19,4 +19,4 @@ Storybook environment barebones starter
 - [ ] Deploy to GH Pages
 - [ ] Husky
 - [ ] Guide: adding to existing project
-- [ ] Theming controls: `styled-theming`, `Themeprovider`, `theme.variants()`
+- [ ] Theming controls: `styled-theming`, `Themeprovider`, `theme.variants()`, Figma API
