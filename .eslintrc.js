@@ -33,7 +33,7 @@ module.exports = {
 		"quotes": ["error", "single",	{ "avoidEscape": true }],
 		"semi": ["error", "always"],
 		"simple-import-sort/sort": "error",
-    "sort-keys": ["error", "asc", {"caseSensitive": true, "natural": false, "minKeys": 2}],
+    // "sort-keys": ["error", "asc", {"caseSensitive": true, "natural": false, "minKeys": 2}],
     "switch-colon-spacing": ["error", {"after": true, "before": false}]
 	}
 }
