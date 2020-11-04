@@ -19,6 +19,7 @@
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.56",
+    "@polkadot/react-identicon": "^0.57.3",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-knobs": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
@@ -32,10 +33,13 @@
     "react-dom": "^16.13.1",
     "react-is": "^16.13.1",
     "semantic-ui-css": "^2.4.1",
+    "storybook-addon-material-ui": "^0.9.0-alpha.21",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
+    "@polkadot/util": "^3.7.1",
+    "@polkadot/util-crypto": "^3.7.1",
     "@storybook/addon-docs": "^5.3.19",
     "@typescript-eslint/eslint-plugin": "^3.3.0",
     "@typescript-eslint/parser": "^3.0.0",

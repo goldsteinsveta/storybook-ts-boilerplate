@@ -1,18 +1,8 @@
-import { createMuiTheme,ThemeOptions, ThemeProvider } from '@material-ui/core';
-import { withKnobs } from '@storybook/addon-knobs';
-import { storiesOf } from '@storybook/react';
 import React from 'react';
+import { ThemeProvider, createMuiTheme, CssBaseline, ThemeOptions } from '@material-ui/core';
 
-import NodeSelector from '../src/NodeSelector';
-import StickyHeadTable from '../src/StickyHeadTable';
-
-const newTheme: ThemeOptions = {
-	palette: {
-		primary: {
-			main: '#FF0000',
-		},
-	},
-	typography: {
+const substrateTheme: ThemeOptions = {
+  typography: {
 		fontFamily: '\Inter\, \Helvetica\, \Roboto\, \Arial\, sans-serif',
 		h1: {
 			fontWeight: 500,
@@ -67,18 +57,24 @@ const newTheme: ThemeOptions = {
 			lineHeight: '135%',
 			letterSpacing: 0.1,
 		},
-	},
+  },
+  palette: {
+    primary: {
+			main: '#00FFFF',
+		},
+  }
+
 };
 
-const appliedTheme = createMuiTheme(newTheme);
-
-storiesOf('MUI Playground', module)
-	.addDecorator(withKnobs)
-	.add('StickyHeadTable', () => {
-		return <StickyHeadTable />;
-	})
-	.add('NodeSelector', () => (
+const ThemeToggleProvider = ({storyFn} ) => {
+  const appliedTheme = createMuiTheme(substrateTheme);
+	return (
 		<ThemeProvider theme={appliedTheme}>
-			<NodeSelector />
+      <CssBaseline/>
+      <div className='yooo'>
+			  {storyFn}
+        </div>
 		</ThemeProvider>
-	));
+	);
+};
+export default ThemeToggleProvider
